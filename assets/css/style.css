@@ -526,7 +526,7 @@ html{
 
 
 .slider {
-    /* margin-top: 20px; */
+    margin-top: 80px;
     height: 38px;
     background-color: #FFE880;
     text-align: center;
@@ -555,6 +555,7 @@ html{
     background-color: var(--graywhite);
     padding-top: 12px;
     display: flex;
+    margin-top: 25px;
 }
 
 .menu {
