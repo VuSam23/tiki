@@ -1,0 +1,863 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Giỏ hàng | Tiki.vn</title>
+    <link rel="stylesheet" href="" />
+    <link rel="icon" href="./assest/image_basket/logo-load.png" />
+    <link rel="stylesheet" href="/assest/basket_main.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+  </head>
+  <body>
+    <header>
+      <div class="header-main">
+        <div class="header-main-logo">
+          <img src="./assest/image_basket/logo_tiki.png" alt="" />
+        </div>
+        <div class="header-main-contain">
+          <div class="header-main-top">
+            <div class="header-main-search">
+              <div class="header-main-search-icon_look">
+                <i class="fa-solid fa-magnifying-glass"></i>
+              </div>
+              <input
+                type="text"
+                name=""
+                id=""
+                placeholder="Bạn tìm gì hôm nay"
+              />
+              <div class="header-main-search-find">
+                <p>Tìm kiếm</p>
+              </div>
+            </div>
+            <div class="header-main-homepage">
+              <div class="main-homepage--flex main-homepage-home">
+                <div class="main-homepage-home-img">
+                  <img src="./assest/image_basket/icon_home.png" alt="" />
+                </div>
+                <p>Trang chủ</p>
+              </div>
+              <div class="main-homepage--flex main-homepage-astra">
+                <div class="main-homepage-astra-img">
+                  <img src="./assest/image_basket/icon_astra.png" alt="" />
+                </div>
+                <p>Astra</p>
+              </div>
+              <div class="main-homepage--flex main-homepage-acc">
+                <div class="main-homepage-acc-img">
+                  <img src="./assest/image_basket/icon_laugh.png" alt="" />
+                </div>
+                <p>Tài khoản</p>
+                <div class="main-homepage-acc-detail">
+                  <a href="">Thông tin đơn hàng</a>
+                  <a href="">Đơn hàng của tôi</a>
+                  <a href="">Đăng xuất</a>
+                </div>
+              </div>
+              <div class="main-homepage-basket">
+                <a href="">
+                  <i class="fa-solid fa-basket-shopping"></i><sup>2</sup></a
+                >
+              </div>
+            </div>
+          </div>
+          <nav class="header-main-menu">
+            <ul>
+              <li><a href="" class="header-main-menu-a">trái cây</a></li>
+              <li><a href="" class="header-main-menu-a">thịt, trứng</a></li>
+              <li><a href="" class="header-main-menu-a">rau củ quả</a></li>
+              <li>
+                <a href="" class="header-main-menu-a">sữa, bơ, phô mai</a>
+              </li>
+              <li><a href="" class="header-main-menu-a">hải sản</a></li>
+              <li><a href="" class="header-main-menu-a">gạo, mì ăn liền</a></li>
+              <li>
+                <a href="" class="header-main-menu-a">đồ uống, bia rượu</a>
+              </li>
+              <li><a href="" class="header-main-menu-a">bánh kẹo</a></li>
+            </ul>
+            <div class="header-main-menu-diliver">
+              <p>Giao đến: <span>(địa chỉ nhận hàng)</span></p>
+            </div>
+          </nav>
+        </div>
+      </div>
+      <div class="header-bottom-wall">
+        <div class="header-bottom-wall-img">
+          <img src="./assest/image_basket/freeship.png" alt="" />
+        </div>
+        <p>mỗi ngày, tự động áp dụng không cần săn mã ></p>
+      </div>
+    </header>
+    <h3 id="title_basket">GIỎ HÀNG</h3>
+    <div class="content">
+      <div class="content-left">
+        <div class="content-left--holder">
+          <div class="left--holder-progress-box">
+            <div class="left-progress-info">
+              <div class="info-1">
+                <p></p>
+              </div>
+              <div class="info-1 info-1-freeship info-1-freeship15k">
+                <p>Freeship 15k</p>
+              </div>
+              <div class="info-1 info-1-freeship">
+                <p>Freeship 30k</p>
+              </div>
+            </div>
+            <div class="content-left-progress">
+              <div class="left-progress-icon">
+                <div class="icon-checked">
+                  <i class="fa-solid fa-circle-check"></i>
+                </div>
+                <div class="icon-checked">
+                  <i class="fa-solid fa-circle-check"></i>
+                </div>
+                <div class="icon-checked">
+                  <i class="fa-solid fa-circle-check"></i>
+                </div>
+              </div>
+              <div class="left-progress-line"></div>
+            </div>
+            <div class="left-progress-info">
+              <div class="info-1">
+                <p>Mua</p>
+              </div>
+              <div class="info-1">
+                <p>149k</p>
+              </div>
+              <div class="info-1">
+                <p>299k</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="content-left-checked">
+            <input
+              type="checkbox"
+              id="checked-product"
+              class="left-checked-input"
+            />
+            <label for="checked-product" class="left-checked-0">
+              Tất cả (2 sản phẩm)</label
+            >
+            <span class="left-checked-1">Đơn giá</span>
+            <span class="left-checked-2">Số lượng</span>
+            <span class="left-checked-3">Thành tiền</span>
+            <i class="fa-solid fa-trash"></i>
+          </div>
+        </div>
+        <div class="content-left-select_product">
+          <div class="select_product-all">
+            <input
+              type="checkbox"
+              id="checked-products"
+              class="left-checked-input"
+            />
+            <label for="checked-products"
+              ><i class="fa-solid fa-shop"></i> SEA BOOKS ></label
+            >
+          </div>
+          <div class="select_product-1">
+            <input
+              type="checkbox"
+              id="checked-products"
+              class="left-checked-input"
+              checked
+            />
+            <div class="select_product-1-img">
+              <img src="./assest/image_basket/product.jpg" alt="" />
+            </div>
+            <div class="select_product-1-des">
+              <p>Muôn Kiếp Nhân Sinh - Many Times, Many Lives - Tập 3</p>
+              <div class="select_product-1-deli">
+                <div class="select_product-1-img-fast">
+                  <img src="./assest/image_basket/fast.png" alt="" />
+                </div>
+                <p>GIAO TIẾP KIỆM</p>
+              </div>
+              <div class="select_product-1-pro">
+                <div class="select_product-1-imgpro">
+                  <img src="./assest/image_basket/star.png" alt="" />
+                </div>
+                <p>+ 0,79 ASA <span>~170 đ</span></p>
+              </div>
+              <p>Sách không hỗ trợ Bookcare</p>
+            </div>
+            <div class="select_product-cost">
+              <p>159.500 đ <span>218.000 đ</span></p>
+              <div class="select_product-amount">
+                <div class="select_product-amount--subtract">
+                  <p>-</p>
+                </div>
+                <div class="select_product-amount--numbering">
+                  <input type="text" placeholder="0" />
+                </div>
+                <div class="select_product-amount--add">
+                  <p>+</p>
+                </div>
+              </div>
+              <p class="select_product-cost-p2">159.500 đ</p>
+              <i class="fa-solid fa-trash"></i>
+            </div>
+          </div>
+          <div class="select_product-voucher-shop">
+            <p class="select_product-voucher-shop-p1">Shop Khuyến Mãi</p>
+            <p class="select_product-voucher-shop-p2">
+              Vui lòng chọn sản phẩm trước
+            </p>
+          </div>
+        </div>
+        <!--product 2 -->
+        <div class="content-left-select_product">
+          <div class="select_product-all">
+            <input
+              type="checkbox"
+              id="checked-products"
+              class="left-checked-input"
+            />
+            <label for="checked-products"
+              ><i class="fa-solid fa-shop"></i> Spiderum Store ></label
+            >
+          </div>
+          <div class="select_product-1">
+            <input
+              type="checkbox"
+              id="checked-products"
+              class="left-checked-input"
+              checked
+            />
+            <div class="select_product-1-img select_product-1-img-2">
+              <img src="./assest/image_basket/book2.webp" alt="" />
+            </div>
+            <div class="select_product-1-des">
+              <p>Sách Người Trong Muôn Nghề: Nghành IT có gì?</p>
+              <div class="select_product-1-deli">
+                <div class="select_product-1-img-fast">
+                  <img src="./assest/image_basket/fast.png" alt="" />
+                </div>
+                <p>GIAO TIẾP KIỆM</p>
+              </div>
+              <div class="select_product-1-pro">
+                <div class="select_product-1-imgpro">
+                  <img src="./assest/image_basket/star.png" alt="" />
+                </div>
+                <p>+ 0,79 ASA <span>~170 đ</span></p>
+              </div>
+              <p>Sách không hỗ trợ Bookcare</p>
+            </div>
+            <div class="select_product-cost select_product-cost-2">
+              <p>159.000 đ <span>169.000 đ</span></p>
+              <div class="select_product-amount">
+                <div class="select_product-amount--subtract">
+                  <p>-</p>
+                </div>
+                <div class="select_product-amount--numbering">
+                  <input type="text" placeholder="0" />
+                </div>
+                <div class="select_product-amount--add">
+                  <p>+</p>
+                </div>
+              </div>
+              <p class="select_product-cost-p2">159.000 đ</p>
+              <i class="fa-solid fa-trash"></i>
+            </div>
+          </div>
+          <div class="select_product-voucher-shop">
+            <p class="select_product-voucher-shop-p1">Shop Khuyến Mãi</p>
+            <p class="select_product-voucher-shop-p2">
+              Vui lòng chọn sản phẩm trước
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="content-right">
+        <div class="content-right-address">
+          <div class="content-right-address-title">
+            <p>Giao tới</p>
+            <p>Thay đổi</p>
+          </div>
+          <div class="content-right-address-contact">
+            <p>Tên Khách Hàng</p>
+            <p>Số điện thoại</p>
+          </div>
+          <div class="content-right-address-position">
+            <p><span>Nhà</span> Địa chỉ nhận hàng</p>
+          </div>
+        </div>
+        <div class="content-right-voucher">
+          <div class="content-right-voucher-title">
+            <p>Tiki Khuyến Mãi</p>
+            <p>Có thể chọn 2 <i class="fa-solid fa-circle-info"></i></p>
+          </div>
+          <div class="content-right-voucher--apply">
+            <div class="content-right-voucher--apply-bank">
+              <img src="./assest/image_basket/zalopay.jpg" alt="" />
+            </div>
+            <div class="content-right-voucher--apply-select">
+              <p>Giảm 15k</p>
+              <i class="fa-solid fa-circle-info"></i>
+              <button type="button">Áp Dụng</button>
+            </div>
+          </div>
+          <div class="content-right-voucher-other">
+            <p>
+              <i class="fa-solid fa-tags"></i> Chọn hoặc nhập Khuyến mãi khác
+            </p>
+          </div>
+        </div>
+        <div class="content-right-ordering">
+          <div class="content-right-ordering-detail_cost">
+            <div class="content-right-ordering-cost_total_temp">
+              <p>Tạm tính</p>
+              <p>318.500đ</p>
+            </div>
+            <div class="content-right-ordering-voucher_laz">
+              <p>Giảm giá</p>
+              <p>-5000đ</p>
+            </div>
+          </div>
+          <div class="content-right-ordering-cost_total">
+            <p>Tổng tiền</p>
+            <div class="ordering-cost_total">
+              <p>313.500 đ</p>
+              <p>(Đã bao gồm VAT nếu có)</p>
+            </div>
+          </div>
+          <div class="content-right-ordering-bonus_astra">
+            <p>Thưởng Astra*</p>
+            <div class="ordering-bonus_astra-contain">
+              <div class="ordering-bonus_astra-contain-1">
+                <div class="ordering-bonus_astra-img_astra">
+                  <img src="./assest/image_basket/star.png" alt="" />
+                </div>
+                <p>1,56</p>
+              </div>
+              <p>~ 340 đ</p>
+            </div>
+          </div>
+          <p class="content-right-ordering-note">
+            * Số Astra thực nhận có thể thay đổi theo chính sách thưởng khi nhận
+            hàng.
+          </p>
+          <div class="content-right-ordering-freeship">
+            <div class="content-right-ordering-freeship-img_fs">
+              <img src="./assest/image_basket/freeship.png" alt="" />
+            </div>
+            <p>đã được áp dụng!</p>
+          </div>
+        </div>
+        <div class="content-right-btn-buy">
+          <button type="button">Mua Hàng (2)</button>
+        </div>
+      </div>
+    </div>
+    <!-- robot -->
+    <div class="fix-icon-right_bottom">
+      <div class="fix-icon-right_bottom-robot">
+        <a href=""><img src="./assest/image_basket/icon_robot.png" alt="" /></a>
+      </div>
+      <div class="fix-icon-right_bottom-messenger">
+        <a href=""> <i class="fa-solid fa-comment-dots"></i> <sup>1</sup></a>
+      </div>
+    </div>
+    <!-- footer -->
+    <footer class="footer">
+      <div class="footer-content">
+        <div class="footer-support">
+          <h3>Hỗ trợ khách hàng</h3>
+          <p>Hotline: <a href="">1900-6035</a></p>
+          <p><a href="">(1000 đ/phút, 8-21h kể cả T7, CN)</a></p>
+          <p><a href="">Các câu hỏi thường gặp</a></p>
+          <p><a href="">Gửi yêu cầu hỗ trợ</a></p>
+          <p><a href="">Hướng dẫn đặt hàng</a></p>
+          <p><a href="">Phương thức vận chuyển</a></p>
+          <p><a href="">Chính sách đổi trả</a></p>
+          <p><a href="">Hướng dẫn trả góp</a></p>
+          <p><a href="">Chính sách hàng nhập khẩu</a></p>
+          <p>Hỗ trợ khách hàng:<a href=""> hotro@tiki.vn</a></p>
+          <p>Báo lỗi bảo mật: <a href="">security@tiki.vn</a></p>
+        </div>
+        <div class="footer-about_tiki">
+          <h3>Về Tiki</h3>
+          <p><a href="">Giới thiệu Tiki</a></p>
+          <p><a href="">Tiki Blog</a></p>
+          <p><a href="">Tuyển dụng</a></p>
+          <p><a href="">Chính sách bảo mật thanh toán</a></p>
+          <p><a href="">Chính sách bảo mật thông tin cá nhân</a></p>
+          <p><a href="">Chính sách giải quyết khiếu nại</a></p>
+          <p><a href="">Điều khoản sử dụng</a></p>
+          <p><a href="">Giới thiệu Tiki Xu</a></p>
+          <p><a href="">Gửi Astra nhận Xu mua sắm thả ga</a></p>
+          <p><a href="">Tiếp thị liên kết cùng Tiki</a></p>
+          <p><a href="">Bán hàng doanh nghiệp</a></p>
+          <p><a href="">Điều kiện vận chuyển</a></p>
+        </div>
+        <div class="footer-coperate">
+          <h3>Hợp tác và liên kết</h3>
+          <p><a href="">Quy chế hoạt động Sàn GDTMĐT</a></p>
+          <p><a href="">Bán hàng cùng Tiki </a></p>
+          <div class="footer-coperate-cer">
+            <h3>Chứng nhận bởi</h3>
+            <a href="">
+              <img
+                src="./assest/image_basket/figerprint.png"
+                alt=""
+                class="footer-coperate-figer"
+            /></a>
+            <a href="">
+              <img
+                src="./assest/image_basket/gorver.svg"
+                alt=""
+                class="footer-coperate-register_go"
+            /></a>
+          </div>
+        </div>
+        <div class="footer-payment">
+          <div class="footer-payment-logo">
+            <h3>Phương thức thanh toán</h3>
+            <img src="/assest/image_basket/payment_tiki.jpg" alt="" />
+            <img src="/assest/image_basket/payment_visa.webp" alt="" />
+            <img src="/assest/image_basket/payment_mastercard.png" alt="" />
+            <img src="/assest/image_basket/payment_jcb.webp" alt="" />
+            <img src="/assest/image_basket/payment_atm.png" alt="" />
+            <img src="/assest/image_basket/payment_momo.png" alt="" />
+            <img src="/assest/image_basket/payment_zalopay.png" alt="" />
+            <img src="/assest/image_basket/payment_moca-grab.png" alt="" />
+            <img src="/assest/image_basket/payment_viettelmoney.png" alt="" />
+            <img src="/assest/image_basket/payment_vnpay.png" alt="" />
+            <img src="/assest/image_basket/payment_money.png" alt="" />
+            <img src="/assest/image_basket/payment_installment.png" alt="" />
+          </div>
+          <div class="footer-payment-service_diliver">
+            <h3>Dịch vụ giao hàng</h3>
+            <a href=""
+              ><img src="/assest/image_basket/tikinow.webp" alt=""
+            /></a>
+          </div>
+        </div>
+        <div class="footer-connect">
+          <div class="footer-connect_tiki">
+            <h3>Kết nối với chúng tôi</h3>
+            <a href=""><img src="/assest/image_basket/fb.png" alt="" /></a>
+            <a href=""><img src="/assest/image_basket/youtube.png" alt="" /></a>
+            <a href=""><img src="/assest/image_basket/zalo.png" alt="" /></a>
+          </div>
+          <div class="footer-connect_tiki-dowload">
+            <h3>Tải ứng dụng trên điện thoại</h3>
+            <div class="footer-connect_tiki-dowload-link">
+              <img src="/assest/image_basket/qrcode.png" alt="" />
+              <div class="tiki-dowload-store">
+                <a href=""
+                  ><img src="/assest/image_basket/appstore.png" alt=""
+                /></a>
+                <a href=""
+                  ><img src="/assest/image_basket/playstore.png" alt=""
+                /></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="footer-content-2">
+        <p>
+          Trụ sở chính: Tòa nhà Viettel, Số 285, đường Cách Mạng Tháng 8, phường
+          12, quận 10, Thành phố Hồ Chí Minh
+        </p>
+        <p>
+          Tiki nhận đặt hàng trực tuyến và giao hàng tận nơi, chưa hỗ trợ mua và
+          nhận hàng trực tiếp tại văn phòng hoặc trung tâm xử lý đơn hàng
+        </p>
+        <p>
+          Giấy chứng nhận Đăng ký Kinh doanh số 0309532909 do Sở Kế hoạch và Đầu
+          tư Thành phố Hồ Chí Minh cấp lần đầu ngày 06/01/2010 và sửa đổi lần
+          thứ 23 ngày 14/02/2022
+        </p>
+        <p>© 2022 - Bản quyền của Công ty TNHH Ti Ki</p>
+      </div>
+      <div class="footer-content-3">
+        <h3>Danh Mục Sản Phẩm</h3>
+        <div class="footer-content-3-lists">
+          <div class="footer-content-3-lists-line_1">
+            <div class="footer-content-3-lists-1">
+              <a href="" class="content-3-lists-1-bold">Đồ Chơi - Mẹ & Bé</a>
+              <p>
+                <a href="">Thời Trang Cho Mẹ Và Bé</a><span>/</span>
+                <a href="">Đồ chơi</a><span>/</span>
+                <a href="">Đồ dùng cho bé</a><span>/</span>
+                <a href="">Chăm sóc nhà cửa</a><span>/</span>
+                <a href="">Chăm sóc mẹ mang thai, sau sinh</a><span>/</span>
+                <a href="">Dinh dưỡng cho bé</a><span>/</span>
+                <a href="">Tã, Bỉm</a><span>/</span>
+                <a href="">Dinh dưỡng cho người lớn</a><span>/</span>
+                <a href="">Dinh dưỡng cho mẹ</a><span>/</span>
+                <a href="">Thực phẩm ăn dặm</a><span>/</span>
+                <a href="">Chuẩn bị mang thai</a><span>/</span>
+              </p>
+            </div>
+            <div class="footer-content-3-lists-1">
+              <a href="" class="content-3-lists-1-bold">Thực Phẩm Tươi Sống</a>
+              <p>
+                <a href="">Trái Cây</a><span>/</span> <a href="">Thịt, Trứng</a
+                ><span>/</span> <a href="">Cá, thuỷ hải sản</a><span>/</span>
+                <a href="">Rau củ quả</a><span>/</span>
+                <a href="">Thực phẩm Việt</a><span>/</span>
+                <a href="">Sữa, bơ, phô mai</a><span>/</span>
+                <a href="">Đông lạnh, mát</a><span>/</span>
+                <a href="">Dầu ăn, gia vị</a><span>/</span>
+                <a href="">Gạo, mì, nông sản</a><span>/</span>
+                <a href="">Đồ hộp, đóng gói</a><span>/</span>
+                <a href="">Bia, đồ uống</a><span>/</span>
+                <a href="">Thực phẩm chay</a><span>/</span>
+                <a href="">Dành cho trẻ em</a><span>/</span>
+                <a href="">Bánh kẹo, giỏ quà</a><span>/</span>
+                <a href="">Thức ăn, đồ thú cưng</a><span>/</span>
+                <a href="">Chăm sóc cá nhân</a><span>/</span>
+                <a href="">Chăm sóc nhà cửa</a><span>/</span>
+              </p>
+            </div>
+            <div class="footer-content-3-lists-1">
+              <a href="" class="content-3-lists-1-bold"
+                >Điện Thoại - Máy Tính Bảng</a
+              >
+              <p>
+                <a href="">Điện thoại Smartphone</a><span>/</span>
+                <a href="">Điện thoại bàn</a><span>/</span>
+                <a href="">Điện thoại phổ thông</a><span>/</span>
+                <a href="">Máy đọc sách</a><span>/</span>
+                <a href="">Máy tính bảng</a><span>/</span>
+              </p>
+            </div>
+            <div class="footer-content-3-lists-1">
+              <a href="" class="content-3-lists-1-bold">Làm Đẹp - Sức Khỏe</a>
+              <p>
+                <a href="">Chăm sóc da mặt</a><span>/</span>
+                <a href="">Dụng cụ làm đẹp</a><span>/</span>
+                <a href="">Thực phẩm chức năng</a><span>/</span>
+                <a href="">Trang điểm</a><span>/</span>
+                <a href="">Chăm sóc cơ thể</a><span>/</span>
+                <a href="">Máy Massage & Thiết bị chăm sóc sức khỏe</a
+                ><span>/</span> <a href="">Sản phẩm thiên nhiên & Khác</a
+                ><span>/</span> <a href="">Chăm sóc tóc và da đầu</a
+                ><span>/</span> <a href="">Chăm sóc cá nhân</a><span>/</span>
+                <a href="">Hỗ trợ tình dục</a><span>/</span>
+                <a href="">Bộ sản phẩm làm đẹp</a><span>/</span>
+                <a href="">Dược mỹ phẩm</a><span>/</span>
+              </p>
+            </div>
+            <div class="footer-content-3-lists-1">
+              <a href="" class="content-3-lists-1-bold">Điện Gia Dụng</a>
+              <p>
+                <a href="">Đồ dùng nhà bếp</a><span>/</span>
+                <a href="">Thiết bị gia đình</a><span>/</span>
+              </p>
+            </div>
+          </div>
+          <div class="footer-content-3-lists-line_2">
+            <div class="footer-content-3-lists-1">
+              <a href="" class="content-3-lists-1-bold">Thời trang nữ</a>
+              <p>
+                <a href="">Áo nữ</a><span>/</span> <a href="">Đầm nữ</a
+                ><span>/</span> <a href="">Quần nữ</a><span>/</span>
+                <a href="">Áo liền quần - Bộ trang phục</a><span>/</span>
+                <a href="">Áo khoác nữ</a><span>/</span>
+                <a href="">Đồ ngủ - Đồ mặc nhà nữ</a><span>/</span>
+                <a href="">Chân váy</a><span>/</span>
+                <a href="">Trang phục bơi nữ</a><span>/</span>
+                <a href="">Thời trang bầu và sau sinh</a><span>/</span>
+                <a href="">Thời trang trung niên</a><span>/</span>
+              </p>
+            </div>
+            <div class="footer-content-3-lists-1">
+              <a href="" class="content-3-lists-1-bold">Thời trang nam</a>
+              <p>
+                <a href="">Áo thun nam</a><span>/</span> <a href="">Quần nam</a
+                ><span>/</span> <a href="">Áo vest - Áo khoác nam</a
+                ><span>/</span> <a href="">Áo sơ mi nam</a><span>/</span>
+                <a href="">Đồ lót nam</a><span>/</span>
+                <a href="">Áo hoodie nam</a><span>/</span>
+                <a href="">Đồ ngủ, đồ mặc nhà nam</a><span>/</span>
+                <a href="">Đồ đôi - Đồ gia đình nam</a><span>/</span>
+                <a href="">Áo nỉ - Áo len nam</a><span>/</span>
+                <a href="">Đồ bơi - Đồ đi biển nam</a><span>/</span>
+                <a href="">Quần áo nam trung niên</a><span>/</span>
+                <a href="">Quần áo nam kích cỡ lớn</a><span>/</span>
+              </p>
+            </div>
+            <div class="footer-content-3-lists-1">
+              <a href="" class="content-3-lists-1-bold">Giày - Dép nữ</a>
+              <p>
+                <a href="">Giày cao gót</a><span>/</span>
+                <a href="">Dép - Guốc nữ</a><span>/</span>
+                <a href="">Giày thể thao nữ</a><span>/</span>
+                <a href="">Giày sandals nữ</a><span>/</span>
+                <a href="">Giày búp bê</a><span>/</span>
+                <a href="">Giày boots nữ</a><span>/</span>
+                <a href="">Giày lười nữ</a><span>/</span>
+                <a href="">Phụ kiện giày</a><span>/</span>
+                <a href="">Giày Đế xuồng nữ </a><span>/</span>
+              </p>
+            </div>
+            <div class="footer-content-3-lists-1">
+              <a href="" class="content-3-lists-1-bold">Giày - Dép nam</a>
+              <p>
+                <a href="">Giày lười nam</a><span>/</span>
+                <a href="">Giày tây nam</a><span>/</span>
+                <a href="">Giày thể thao nam</a><span>/</span>
+                <a href="">Dép nam</a><span>/</span>
+                <a href="">Giày sandals nam</a><span>/</span>
+                <a href="">Phụ kiện giày nam</a><span>/</span>
+                <a href="">Giày boots nam</a><span>/</span>
+              </p>
+            </div>
+            <div class="footer-content-3-lists-1">
+              <a href="" class="content-3-lists-1-bold">Túi thời trang nữ</a>
+              <p>
+                <a href="">Túi đeo chéo, túi đeo vai nữ</a><span>/</span>
+                <a href="">Ví nữ</a><span>/</span> <a href="">Túi xách tay nữ</a
+                ><span>/</span> <a href="">Túi tote nữ</a><span>/</span>
+                <a href="">Phụ kiện túi</a><span>/</span>
+              </p>
+            </div>
+            <div class="footer-content-3-lists-1">
+              <a href="" class="content-3-lists-1-bold">Túi thời trang nam</a>
+              <p>
+                <a href="">Ví nam</a><span>/</span>
+                <a href="">Túi đeo chéo nam</a><span>/</span>
+                <a href="">Túi xách công sở nam</a><span>/</span>
+                <a href="">Túi bao tử, túi đeo bụng</a><span>/</span>
+              </p>
+            </div>
+          </div>
+          <div class="footer-content-3-lists-line_3">
+            <div class="footer-content-3-lists-1">
+              <a href="" class="content-3-lists-1-bold">Balo và Vali</a>
+              <p>
+                <a href="">Balo</a><span>/</span>
+                <a href="">Túi du lịch và phụ kiện</a><span>/</span>
+                <a href="">Balo, cặp, túi chống sốc laptop</a><span>/</span>
+                <a href="">Vali, phụ kiện vali </a><span>/</span>
+              </p>
+            </div>
+            <div class="footer-content-3-lists-1">
+              <a href="" class="content-3-lists-1-bold">Phụ kiện thời trang</a>
+              <p>
+                <a href="">Phụ kiện thời trang nữ</a><span>/</span>
+                <a href="">Mắt kính</a><span>/</span>
+                <a href="">Phụ kiện thời trang nam</a><span>/</span>
+              </p>
+            </div>
+            <div class="footer-content-3-lists-1">
+              <a href="" class="content-3-lists-1-bold">Đồng hồ và Trang sức</a>
+              <p>
+                <a href="">Trang sức</a><span>/</span> <a href="">Đồng hồ nữ</a
+                ><span>/</span> <a href="">Đồng hồ nam</a><span>/</span>
+                <a href="">Phụ kiện đồng hồ</a><span>/</span>
+                <a href="">Đồng hồ trẻ em</a><span>/</span>
+              </p>
+            </div>
+            <div class="footer-content-3-lists-1">
+              <a href="" class="content-3-lists-1-bold"
+                >Laptop - Máy Vi Tính - Linh kiện</a
+              >
+              <p>
+                <a href="">Linh Kiện Máy Tính - Phụ Kiện Máy Tính</a
+                ><span>/</span>
+                <a href="">Thiết Bị Văn Phòng - Thiết Bị Ngoại Vi</a
+                ><span>/</span> <a href="">Thiết Bị Mạng</a><span>/</span>
+                <a href="">Thiết Bị Lưu Trữ</a><span>/</span>
+                <a href="">PC - Máy Tính Bộ</a><span>/</span>
+                <a href="">Laptop</a><span>/</span>
+              </p>
+            </div>
+            <div class="footer-content-3-lists-1">
+              <a href="" class="content-3-lists-1-bold">Nhà Cửa - Đời Sống</a>
+              <p>
+                <a href="">Trang trí nhà cửa</a><span>/</span>
+                <a href="">Dụng cụ nhà bếp</a><span>/</span>
+                <a href="">Sửa chữa nhà cửa</a><span>/</span>
+                <a href="">Ngoài trời & sân vườn</a><span>/</span>
+                <a href="">Nội thất</a><span>/</span>
+                <a href="">Đèn & thiết bị chiếu sáng</a><span>/</span>
+                <a href="">Đồ dùng và thiết bị nhà tắm</a><span>/</span>
+                <a href="">Đồ dùng phòng ăn</a><span>/</span>
+                <a href="">Đồ dùng phòng ngủ</a><span>/</span>
+                <a href="">Đồ thờ cúng</a><span>/</span> <a href="">Nhạc cụ</a
+                ><span>/</span> <a href="">Hoa tươi và cây cảnh</a
+                ><span>/</span>
+              </p>
+            </div>
+            <div class="footer-content-3-lists-1">
+              <a href="" class="content-3-lists-1-bold">Bách Hóa Online</a>
+              <p>
+                <a href="">Chăm sóc thú cưng</a><span>/</span>
+                <a href="">Đồ uống - Pha chế dạng bột</a><span>/</span>
+                <a href="">Thực phẩm Đóng hộp và Khô</a><span>/</span>
+                <a href="">Gia Vị và Chế Biến</a><span>/</span>
+                <a href="">Đậu & Hạt Các Loại</a><span>/</span>
+                <a href="">Đồ Ăn Vặt</a><span>/</span>
+                <a href="">Sữa và các Sản phẩm từ sữa</a><span>/</span>
+                <a href="">Đồ Uống Không Cồn</a><span>/</span>
+                <a href="">Đồ uống có cồn</a><span>/</span>
+                <a href="">Bộ quà tặng</a><span>/</span>
+              </p>
+            </div>
+          </div>
+          <div class="footer-content-3-lists-line_4">
+            <div class="footer-content-3-lists-1">
+              <a href="" class="content-3-lists-1-bold">Hàng Quốc Tế</a>
+              <p>
+                <a href="">Nhà Cửa - Đời Sống</a><span>/</span>
+                <a href="">Thời Trang</a><span>/</span>
+                <a href="">Ô tô, xe máy, xe đạp</a><span>/</span>
+                <a href="">Thiết Bị Số - Phụ Kiện Số</a><span>/</span>
+                <a href="">Thể thao - Dã ngoại</a><span>/</span>
+                <a href="">Làm Đẹp - Sức Khỏe</a><span>/</span>
+                <a href="">Sách, Văn phòng phẩm & Quà lưu niệm</a
+                ><span>/</span> <a href="">Mẹ & Bé</a><span>/</span>
+                <a href="">Điện gia dụng</a><span>/</span>
+                <a href="">Bách hóa online</a><span>/</span>
+                <a href="">Máy Ảnh - Máy Quay Phim</a><span>/</span>
+                <a href="">Laptop & Máy Vi Tính</a><span>/</span>
+                <a href="">Sản phẩm - thiết bị công nghiệp</a><span>/</span>
+                <a href="">Tivi & Thiết Bị Nghe Nhìn</a><span>/</span>
+                <a href="">Điện Thoại - Máy Tính Bảng</a><span>/</span>
+              </p>
+            </div>
+            <div class="footer-content-3-lists-1">
+              <a href="" class="content-3-lists-1-bold"
+                >Thiết Bị Số - Phụ Kiện Số</a
+              >
+              <p>
+                <a href="">Phụ Kiện Điện Thoại và Máy Tính Bảng</a
+                ><span>/</span> <a href="">Phụ kiện máy tính và Laptop</a
+                ><span>/</span> <a href="">Thiết Bị Âm Thanh và Phụ Kiện</a
+                ><span>/</span>
+                <a href="">Thiết Bị Thông Minh và Linh Kiện Điện Tử</a
+                ><span>/</span>
+                <a href="">Thiết Bị Đeo Thông Minh và Phụ Kiện</a
+                ><span>/</span> <a href="">Thiết Bị Chơi Game và Phụ Kiện</a
+                ><span>/</span>
+              </p>
+            </div>
+            <div class="footer-content-3-lists-1">
+              <a href="" class="content-3-lists-1-bold">Voucher - Dịch vụ</a>
+              <p>
+                <a href="">Thanh toán hóa đơn</a><span>/</span>
+                <a href="">Khóa học</a><span>/</span>
+                <a href="">Du lịch - Khách sạn</a><span>/</span>
+                <a href="">Spa & Làm đẹp</a><span>/</span>
+                <a href="">Dịch vụ khác</a><span>/</span>
+                <a href="">Nhà hàng - Ăn uống</a><span>/</span>
+                <a href="">Sự kiện - Giải trí</a><span>/</span>
+                <a href="">Nha khoa - Sức khỏe</a><span>/</span>
+                <a href="">Phiếu quà tặng</a><span>/</span>
+                <a href="">Sim số - Thẻ cào - Thẻ game</a><span>/</span>
+              </p>
+            </div>
+            <div class="footer-content-3-lists-1">
+              <a href="" class="content-3-lists-1-bold"
+                >Ô Tô - Xe Máy - Xe Đạp</a
+              >
+              <p>
+                <a href="">Phụ kiện - Chăm sóc xe</a><span>/</span>
+                <a href="">Xe điện</a><span>/</span> <a href="">Xe đạp</a
+                ><span>/</span> <a href="">Xe máy</a><span>/</span>
+                <a href="">Ô tô</a><span>/</span> <a href="">Xe Scooter</a
+                ><span>/</span> <a href="">Dịch vụ, lắp đặt</a><span>/</span>
+              </p>
+            </div>
+            <div class="footer-content-3-lists-1">
+              <a href="" class="content-3-lists-1-bold">Nhà Sách Tiki</a>
+              <p>
+                <a href="">Sách tiếng Việt</a><span>/</span>
+                <a href="">Văn phòng phẩm</a><span>/</span>
+                <a href="">Văn phòng phẩm</a><span>/</span>
+                <a href="">English Books</a><span>/</span>
+              </p>
+            </div>
+          </div>
+          <div class="footer-content-3-lists-line_5">
+            <div class="footer-content-3-lists-1">
+              <a href="" class="content-3-lists-1-bold">Điện Tử - Điện Lạnh</a>
+              <p>
+                <a href="">Âm thanh & Phụ kiện Tivi</a><span>/</span>
+                <a href="">Phụ kiện điện lạnh</a><span>/</span>
+                <a href="">Tủ lạnh</a><span>/</span>
+                <a href="">Máy lạnh - Máy điều hòa</a><span>/</span>
+                <a href="">Máy giặt</a><span>/</span>
+                <a href="">Tủ đông - Tủ mát</a><span>/</span> <a href="">Tivi</a
+                ><span>/</span> <a href="">Máy nước nóng</a><span>/</span>
+                <a href="">Máy rửa chén</a><span>/</span>
+                <a href="">Máy sấy quần áo</a><span>/</span>
+                <a href="">Tủ ướp rượu</a><span>/</span>
+              </p>
+            </div>
+            <div class="footer-content-3-lists-1">
+              <a href="" class="content-3-lists-1-bold">Thể Thao - Dã Ngoại</a>
+              <p>
+                <a href="">Trang phục thể thao nữ</a><span>/</span>
+                <a href="">Trang phục thể thao nam</a><span>/</span>
+                <a href="">Đồ dùng dã ngoại</a><span>/</span>
+                <a href="">Giày thể thao nam</a><span>/</span>
+                <a href="">Phụ kiện thể thao</a><span>/</span>
+                <a href="">Dụng cụ - thiết bị tập thể thao</a><span>/</span>
+                <a href="">Các môn thể thao khác</a><span>/</span>
+                <a href="">Dụng cụ câu cá</a><span>/</span>
+                <a href="">Thể thao dưới nước</a><span>/</span>
+                <a href="">Các môn thể thao đồng đội</a><span>/</span>
+                <a href="">Các môn thể thao chơi vợt</a><span>/</span>
+                <a href="">Các môn thể thao đối kháng </a><span>/</span>
+                <a href="">Giày thể thao nữ</a><span>/</span>
+                <a href="">Thực phẩm bổ sung năng lượng </a><span>/</span>
+                <a href="">Dụng cụ leo núi </a><span>/</span>
+              </p>
+            </div>
+            <div class="footer-content-3-lists-1">
+              <a href="" class="content-3-lists-1-bold"
+                >Máy Ảnh - Máy Quay Phim</a
+              >
+              <p>
+                <a href="">Phụ Kiện Máy Ảnh, Máy Quay</a><span>/</span>
+                <a href="">Camera Giám Sát</a><span>/</span>
+                <a href="">Thiết Bị Ánh Sáng</a><span>/</span>
+                <a href="">Camera Hành Trình - Action Camera và Phụ Kiện</a
+                ><span>/</span> <a href="">Balo - Túi Đựng - Bao Da</a
+                ><span>/</span> <a href="">Ống Kính - Ống Ngắm</a
+                ><span>/</span> <a href="">Ống Kính (Lens)</a><span>/</span>
+                <a href="">Thiết Bị Quay Phim</a><span>/</span>
+                <a href="">Máy Bay Camera và Phụ Kiện</a><span>/</span>
+                <a href="">Máy Ảnh</a><span>/</span>
+              </p>
+            </div>
+            <div class="footer-content-3-lists-1">
+              <a href="" class="content-3-lists-1-bold"
+                >Từ Khóa Được Quan Tâm</a
+              >
+              <p>
+                <a href="">dầu gội TRESemmé</a><span>/</span>
+                <a href="">dầu gội Nguyên Xuân</a><span>/</span>
+                <a href="">dầu gội trị gàu</a><span>/</span>
+                <a href="">dầu gội Selsun</a><span>/</span>
+                <a href="">kem chống nắng Anessa</a><span>/</span>
+                <a href="">kem chống nắng Cell Fusion C</a><span>/</span>
+                <a href="">kem chống nắng</a><span>/</span>
+                <a href="">kem chống nắng Vichy</a><span>/</span>
+                <a href="">serum trị mụn</a><span>/</span>
+                <a href="">vitamin c serum</a><span>/</span>
+                <a href="">son kem</a><span>/</span>
+                <a href="">son dưỡng Dior</a><span>/</span>
+                <a href="">sữa rửa mặt</a><span>/</span> <a href="">CeraVe</a
+                ><span>/</span>
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
