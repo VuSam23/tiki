@@ -435,6 +435,9 @@ header {
 .header-bottom-wall-img > img {
   width: 100%;
 }
+.header-main-homepage>a{
+  text-decoration: none;
+}
 .header-main-menu > ul {
   list-style: none;
   margin: 0;
@@ -626,7 +629,7 @@ header {
 .footer {
   width: 100%;
   background-color: #fff;
-  margin-top: 10px;
+  margin-top: 20px;
   font-size: 12px;
 }
 .footer-content {
